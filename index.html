@@ -2,13 +2,229 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Community of ukrainians in Mersin</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Сторіна спілки українців" />
+
+    <link rel="shortcut icon" type="image/png" href="/img/logo.png" />
+    <link rel="stylesheet" type="text/css" href="Vendors/Css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="Vendors/Css/Grid.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Vendors/Css/ionicons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="Vendors/Css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="resources/CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/CSS/queries.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400"
+      rel="stylesheet"
+    />
+    <title>Спілка Українців у Мерсіні</title>
+
+    <!-- Favicons -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/resources/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/resources/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/resources/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/resources/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/resources/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/resources/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="/resources/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <h1>Mersin UA Community</h1>
-    <div class="test">TEST</div>
+    <header>
+      <nav>
+        <div class="row">
+          <img src="/img/logo.png" alt="Community Logo File" class="logo" />
+          <ul class="main-nav js--main-nav">
+            <li><a href="#food">Наша мета</a></li>
+            <li><a href="#works">Наші події</a></li>
+            <li><a href="#city">Реєстрація</a></li>
+            <li><a href="#sign-up">Контакти</a></li>
+          </ul>
+          <a class="mobile-nav-icon js--nav-icon"
+            ><i class="ion-navicon-round"></i
+          ></a>
+        </div>
+      </nav>
+      <div class="hero-text-box">
+        <h1>
+          Спілка українців у Мерсіні<br />
+          <span class="small-hero-txt">Україна з нами в серці всюди</span>
+        </h1>
+        <a class="btn btn-full js--scroll-to-plans" href="#">Зарєструватись </a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">Ознайомитись </a>
+      </div>
+    </header>
+
+    <section class="section-features js--section-features" id="food">
+      <div class="row">
+        <h2>Наші мета &mdash; (4 основні)</h2>
+        <p class="long-copy">
+          Туту ми запишем 4 колонки наших основних цінностей.
+        </p>
+      </div>
+
+      <div class="row js--wp-1">
+        <div class="col span-1-of-4 box">
+          <i class="ion-ios-infinite-outline icon-big"></i>
+          <h3>Культура</h3>
+          <p>
+            (ми ж не забудем поміняти іконки) Never cook again! We really mean
+            that. Our subscription plans include up to 365 days/year coverage.
+            You can also choose to order more flexibly if that's your style.
+          </p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <i class="ion-ios-stopwatch-outline icon-big"></i>
+          <h3>Спорт</h3>
+          <p>
+            (ми ж не забудем поміняти іконки) You're only twenty minutes away
+            from your delicious and super healthy meals delivered right to your
+            home. We work with the best chefs in each town to ensure that you're
+            100% happy.
+          </p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <i class="ion-ios-nutrition-outline icon-big"></i>
+          <h3>Інтеграція</h3>
+          <p>
+            All our vegetables are fresh, organic and local. Animals are raised
+            without added hormones or antibiotics. Good for your health, the
+            environment, and it also tastes better!
+          </p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <i class="ion-ios-cart-outline icon-big"></i>
+          <h3>Підтримка</h3>
+          <p>
+            We don't limit your creativity, which means you can order whatever
+            you feel like. You can also choose from our menu containing over 100
+            delicious meals. It's up to you!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-meals" id="works">
+      <div class="row">
+        <h2>Секція &mdash; Найближчі події</h2>
+        <p class="long-copy">
+          Тут ми напишем абзац для чого взагалі влаштовуються події, ну і нижче
+          Грід з подіями. Перша подія - на всю ширину, дві наступні - поділені
+          пополам ширини. При звуженні сторінки (моб) все вистроїтьсяв стовпчик
+        </p>
+      </div>
+    </section>
+
+    <section class="section-testimonials" id="city">
+      <div class="row">
+        <h2>
+          Круто оформлена секція з плаваючої картинкою - це буде реєстраційна
+          форма
+        </h2>
+      </div>
+      <div class="row">
+        <p class="long-copy">
+          Поля з іменем Телеграм АйДі, телефоном і кнопкою "зареєструватись".
+          Летить через чат-бота адмінам в телеграм, а юзеру відкриваєтья в
+          сусідній сторінці форма (хмарна) з детальним заповення своїх даних.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Тут буде вся інформація як нас знайти</p>
+      <div class="row" id="sign-up">
+        <div class="col span-1-of-2">
+          <!-- <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">iOS App</a></li>
+            <li><a href="#">Android App</a></li>
+          </ul> -->
+        </div>
+        <div class="col span-1-of-2">
+          <ul class="social-links">
+            <li>
+              <a href="#"><i class="ion-social-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ion-social-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ion-social-googleplus"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ion-social-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <p class="copyright">
+          &copy; Designed by
+          <a class="twitter-link" target="_blank" href="#">Nataliia Zabava</a>
+        </p>
+        <p>
+          Developed by
+          <a
+            class="copyright"
+            class="twitter-link"
+            target="_blank"
+            href="https://github.com/Kochurovskyi"
+            >Yurii Kochurovskyi</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+    <script src="Vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-142714488-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-142714488-1");
+    </script>
   </body>
 </html>
