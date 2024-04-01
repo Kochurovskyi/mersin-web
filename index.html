@@ -2,229 +2,311 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Сторіна спілки українців" />
-
-    <link rel="shortcut icon" type="image/png" href="/img/logo.png" />
-    <link rel="stylesheet" type="text/css" href="Vendors/Css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="Vendors/Css/Grid.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="Vendors/Css/ionicons.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="Vendors/Css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="resources/CSS/style.css" />
-    <link rel="stylesheet" type="text/css" href="resources/CSS/queries.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400"
-      rel="stylesheet"
-    />
-    <title>Спілка Українців у Мерсіні</title>
-
-    <!-- Favicons -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/resources/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/resources/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/resources/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/resources/favicons/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/resources/favicons/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <link rel="shortcut icon" href="/resources/favicons/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
-      name="msapplication-config"
-      content="/resources/favicons/browserconfig.xml"
+      name="description"
+      content="Mersin Ukrainians Culture and Education Association. The association organizes social and cultural events, educational and information activities, charitable activity. Integration and development of Ukrainians in Mersinia, preservation of the Ukrainian language and culture in Ukrainian-Turkish families"
     />
-    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
+    <title>Асоціація українців у Мерсіні</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="row">
-          <img src="/img/logo.png" alt="Community Logo File" class="logo" />
-          <ul class="main-nav js--main-nav">
-            <li><a href="#food">Наша мета</a></li>
-            <li><a href="#works">Наші події</a></li>
-            <li><a href="#city">Реєстрація</a></li>
-            <li><a href="#sign-up">Контакти</a></li>
-          </ul>
-          <a class="mobile-nav-icon js--nav-icon"
-            ><i class="ion-navicon-round"></i
-          ></a>
-        </div>
+    <header class="header">
+      <a href="#"><img class="logo" alt="Spilka logo" src="img/spilka-logo.png" /></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#aims">Цілі</a></li>
+          <li><a class="main-nav-link" href="#upcoming">Найближчі події</a></li>
+          <li><a class="main-nav-link" href="#past">Минулі заходи</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Долучитись</a></li>
+        </ul>
       </nav>
-      <div class="hero-text-box">
-        <h1>
-          Спілка українців у Мерсіні<br />
-          <span class="small-hero-txt">Україна з нами в серці всюди</span>
-        </h1>
-        <a class="btn btn-full js--scroll-to-plans" href="#">Зарєструватись </a>
-        <a class="btn btn-ghost js--scroll-to-start" href="#">Ознайомитись </a>
-      </div>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
-
-    <section class="section-features js--section-features" id="food">
-      <div class="row">
-        <h2>Наші мета &mdash; (4 основні)</h2>
-        <p class="long-copy">
-          Туту ми запишем 4 колонки наших основних цінностей.
-        </p>
-      </div>
-
-      <div class="row js--wp-1">
-        <div class="col span-1-of-4 box">
-          <i class="ion-ios-infinite-outline icon-big"></i>
-          <h3>Культура</h3>
-          <p>
-            (ми ж не забудем поміняти іконки) Never cook again! We really mean
-            that. Our subscription plans include up to 365 days/year coverage.
-            You can also choose to order more flexibly if that's your style.
-          </p>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Асоіціація українців у Мерсіні</h1>
+            <p class="hero-description">З Україною в серці</p>
+            <a href="#cta" class="btn btn--full margin-right-sm">Зареєструватись</a>
+            <a href="#aims" class="btn btn--outline">Більше про нас &darr;</a>
         </div>
-        <div class="col span-1-of-4 box">
-          <i class="ion-ios-stopwatch-outline icon-big"></i>
-          <h3>Спорт</h3>
-          <p>
-            (ми ж не забудем поміняти іконки) You're only twenty minutes away
-            from your delicious and super healthy meals delivered right to your
-            home. We work with the best chefs in each town to ensure that you're
-            100% happy.
-          </p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <i class="ion-ios-nutrition-outline icon-big"></i>
-          <h3>Інтеграція</h3>
-          <p>
-            All our vegetables are fresh, organic and local. Animals are raised
-            without added hormones or antibiotics. Good for your health, the
-            environment, and it also tastes better!
-          </p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <i class="ion-ios-cart-outline icon-big"></i>
-          <h3>Підтримка</h3>
-          <p>
-            We don't limit your creativity, which means you can order whatever
-            you feel like. You can also choose from our menu containing over 100
-            delicious meals. It's up to you!
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section-meals" id="works">
-      <div class="row">
-        <h2>Секція &mdash; Найближчі події</h2>
-        <p class="long-copy">
-          Тут ми напишем абзац для чого взагалі влаштовуються події, ну і нижче
-          Грід з подіями. Перша подія - на всю ширину, дві наступні - поділені
-          пополам ширини. При звуженні сторінки (моб) все вистроїтьсяв стовпчик
-        </p>
-      </div>
-    </section>
-
-    <section class="section-testimonials" id="city">
-      <div class="row">
-        <h2>
-          Круто оформлена секція з плаваючої картинкою - це буде реєстраційна
-          форма
-        </h2>
-      </div>
-      <div class="row">
-        <p class="long-copy">
-          Поля з іменем Телеграм АйДі, телефоном і кнопкою "зареєструватись".
-          Летить через чат-бота адмінам в телеграм, а юзеру відкриваєтья в
-          сусідній сторінці форма (хмарна) з детальним заповення своїх даних.
-        </p>
-      </div>
-    </section>
-
-    <footer>
-      <p>Тут буде вся інформація як нас знайти</p>
-      <div class="row" id="sign-up">
-        <div class="col span-1-of-2">
-          <!-- <ul class="footer-nav">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">iOS App</a></li>
-            <li><a href="#">Android App</a></li>
-          </ul> -->
+      <section class="section-aims" id="aims">
+        <div class="container">
+          <span class="subheading">Цілі</span>
+          <h2 class="heading-secondary">Наші цілі та мета діяльності</h2>
         </div>
-        <div class="col span-1-of-2">
+
+        <div class="container grid grid--4-cols">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="people-outline"></ion-icon>
+            <p class="feature-title">Підтримка</p>
+            <p class="feature-text">
+                Надаємо індивідуальну та групову психологічну допомогу. Організовуємо та надаємо допомогу у вирішенні психологічних проблем, які виникають у зв'язку з перебуванням в іншій країні та віддаленістю від сім'ї та рідних. Координація благодійницької діяльності та надання допомоги українцям, які опинилися в складних життєвих ситуаціях
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="earth-outline"></ion-icon>
+            <p class="feature-title">Єднання</p>
+            <p class="feature-text">
+                Створюємо можливості для культурної, історичної, мовної та економічної співправці між українцями та турками, організовуємо спільні соціальні, спортивні та культурні заходи, які сприяють зміцненню дружби та близькісті між турецьким та українським народами. Займаємось поглибленням та розширенням всіх видів співробітництва між Туреччиною та Україною
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+            <p class="feature-title">Збереження</p>
+            <p class="feature-text">
+                Збереження української мови та культури як в українських так і в змішаних (українсько-турецьких) родинах. Організовуємо освітні заходи з метою популяризації української самобутності, а також для ознайомлення з українською побутом та традиціями дітей українсько-турецьких сімей
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="sync-outline"></ion-icon>
+            <p class="feature-title">Інтеграція</p>
+            <p class="feature-text">
+                Допомога українцям з легалізацією в Туреччині. Консультації з питань отримання дозволу на проживання, допомога у вивченні турецької мови, знайомство з культрурними особливистями та менталітетом місцевого населення. Інтеграція українців у турецьке суспільство, підтримка у вирішенні як побутових так і адміністравно-правових питань  
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-upcoming" id="upcoming">
+        <div class="container">
+          <span class="subheading">Скоро...</span>
+          <div class="upcoming">
+            <div class="upcoming-text-box">
+              <h2 class="heading-secondary">07.04.2024 </h2>
+                <p class="upcoming-text"> Коли: 08.00-14.00</p> 
+                <p class="upcoming-text">Де: Село Бьозон</p>
+                <p class="upcoming-text"> Що: Ходимо по горах</p>
+                <p class="upcoming-text"> Для кого: усіх хто чує себе в силі</p>
+            </div>
+            <div
+              class="upcoming-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-past" id="past">
+        <div class="container">
+          <span class="subheading">Наші минулі заходи</span>
+          <!-- <h2 class="heading-secondary">Не придумав що тут писати</h2> -->
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <!-- STEP 01 -->
+          <div class="step-text-box">
+            <p class="step-number">30.03.2024</p>
+            <h3 class="heading-tertiary">
+              Малювали з дітками
+            </h3>
+            <p class="step-description">
+              Малювали акриловими фарбами котячу банду. Дітки вчилися змішувати фарби, збудували чудову композицію, порахували котиків чи всі були на місці. Захоплюючий процес, яскраві враження, іншим разом навіть дещо неочікувані результати. 
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <!-- src="img/app/app-screen-1.png" -->
+            <!-- src="img/eve/eve-screen-1.png" -->
+            <img
+              src="img/eve/eve-screen-0.png" 
+              class="step-img"
+              alt="iPhone app
+            preferences selection screen"
+            />
+          </div>
+
+          <!-- STEP 02 -->
+          <div class="step-img-box">
+            <img
+            src="img/eve/eve-screen-1.png" 
+              class="step-img"
+              alt="iPhone app
+            meal approving plan screen"
+            />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">25.03.2024</p>
+            <h3 class="heading-tertiary">Українські пісні в опері</h3>
+            <p class="step-description">
+              Чудовий культурний захід для всіх любителів української і не тільки класичної музики. Виступали найкращі оперні виконавці Мерсніу. Лунали як класичні турецькі та європейскі оперні твори так всіма нами знані з дитинства українцькі шедеври
+            </p>
+          </div>
+
+          <!-- STEP 03 -->
+          <div class="step-text-box">
+            <p class="step-number">24.03.2024</p>
+            <h3 class="heading-tertiary">Щонедільне тренування</h3>
+            <p class="step-description">
+              Відмінний спосіб провести недільний ранок. Велосипед та легенький біг в колі близьких друзів щонеділі. Все це на набережній Мізітлі (від Фатіх/Бабель і до Марини і назад). Далі теплі посиденькі в кафе на набережній зі свіжовижатими соками, кавою та турецьким Гьозлеме
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+            src="img/eve/eve-screen-2.png" 
+              class="step-img"
+              alt="iPhone app
+            delivery screen"
+            />
+          </div>
+        </div>
+      </section>
+    
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">
+                Відчуйте всі переваги долучившись...
+              </h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+
+              <form class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="full-name">Ім'я та Прізвище</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="Василь Петренко"
+                    name="full-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Телеграм АйДі</label>
+                  <!-- type="email" -->
+                  <input
+                    id="email"
+                    placeholder="@vasyl"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="phone">Номер телефону</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="(555)111-22-33"
+                    name="phone"
+                    pattern="\(\d{3}\)\s?\d{3}-?\d{2}-?\d{2}|\d{10}"
+                    required
+                  />
+                </div>
+
+                <button class="btn btn--form">Зареєструватись</button>
+
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--2-cols">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="Spilka logo" src="img/spilka-logo.png" />
+          </a>
+
           <ul class="social-links">
             <li>
-              <a href="#"><i class="ion-social-facebook"></i></a>
+              <a class="footer-link" href="https://instagram.com/mersinua"  target="_blank"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="ion-social-twitter"></i></a>
+              <a class="footer-link" href="https://www.facebook.com/MersinUA" target="_blank"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="ion-social-googleplus"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-social-instagram"></i></a>
+              <a class="footer-link" href="#"
+                ><svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.2488 15.7229" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </a>
             </li>
           </ul>
+
+          <p class="copyright">
+            Права &copy; <span class="year">2027</span> Асоціація українців у Мерсіні.
+          </p>
+          <p class="copyright">Дизайн: Забава Наталія</p>
+          <p class="copyright">Розробка: Кочуровський Юрій</p>
+          
+
+          
+
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Контакти</p>
+          <address class="contacts">
+            <p class="address">Адреса:<br /> 
+              Akdeniz Mah Fatih Caddesi Aral 1 Apart No:17/B       <br /> MEZITLI/Mersin, Mersin, Turkey<p>
+            <p>Голова асоціації: Галина Веселуха<br />
+            <a class="footer-link" href="tel:+905392473914">(+90)539-247-39-14</a><br />
+            <a class="footer-link" href="tel:+905307888467">(+90)530-788-84-67</a><br />
+            <a class="footer-link" href="mailto:mersinukraynalilar@gmail.com"
+                >mersinukraynalilar@gmail.com</a>
+            </p>
+          </address>
         </div>
       </div>
-      <div class="row">
-        <p class="copyright">
-          &copy; Designed by
-          <a class="twitter-link" target="_blank" href="#">Nataliia Zabava</a>
-        </p>
-        <p>
-          Developed by
-          <a
-            class="copyright"
-            class="twitter-link"
-            target="_blank"
-            href="https://github.com/Kochurovskyi"
-            >Yurii Kochurovskyi</a
-          >
-        </p>
-      </div>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
-    <script src="Vendors/js/jquery.waypoints.min.js"></script>
-    <script src="resources/js/script.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-142714488-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-142714488-1");
-    </script>
   </body>
 </html>
