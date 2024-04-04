@@ -90,6 +90,18 @@ function checkFlexGap() {
 }
 checkFlexGap();
 
+///////////////////////////////////////////////////////////
+// Fixing background-attachment: fixed if its safari
+window.onload = function () {
+  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  if (isSafari) {
+    var element = document.querySelector(".section-hero");
+    if (element) {
+      element.style.backgroundAttachment = "scroll";
+    }
+  }
+};
+
 const formButton = document.querySelector(".btn--form");
 formButton.addEventListener("click", function () {
   window.open(
