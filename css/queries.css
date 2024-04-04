@@ -10,7 +10,7 @@
   }
 
   .heading-primary {
-    font-size: 4.4rem;
+    font-size: 4.0rem;
   }
 
   .gallery {
@@ -78,6 +78,8 @@
   .hero-img-box {
     text-align: center;
   }
+
+  .hero-description {text-align: left}
 
   .hero-img {
     width: 60%;
@@ -314,15 +316,25 @@
 }
 
 /**************************/
-/* BELOW 400x (Phones) */
+/* BELOW 440x (Phones) */
 /**************************/
 @media (max-width: 28em) {
   .step-img {
     height: 50%; /* Adjust as needed */
     width: auto; /* Set the width to auto to maintain aspect ratio */
   }
+
+  .upcoming-text-box {
+    padding: 2.8rem 3.6rem 3.6rem 4.2rem;
+  }
+
+
+
 }
 
+/**************************/
+/* BELOW 400x (Phones) */
+/**************************/
 
 @media (max-width: 25em) {
   .grid {
@@ -389,13 +401,13 @@
   }
 
   .cta-text-box {
-    padding: 2.8.2rem;
+    padding: 2.8rem;
   }
 
-  /* .cta-img-box {
-    height: 32rem;
-    grid-row: 1;
-  } */
+  .upcoming {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 

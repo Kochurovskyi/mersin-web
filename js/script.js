@@ -91,7 +91,6 @@ function checkFlexGap() {
 checkFlexGap();
 
 const formButton = document.querySelector(".btn--form");
-
 formButton.addEventListener("click", function () {
   window.open(
     "https://docs.google.com/forms/d/e/1FAIpQLSdlcvCIgZAHsnPhpUAj81aRBySXeS3259LKjri6XQjE3bjOOw/viewform"

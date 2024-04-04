@@ -139,10 +139,10 @@ body {
 }
 
 .heading-primary {
+  font-size: 4.4rem;
   color: #e2e5eb;
+  text-shadow: -1px 0 #141c88, 0 1px #141c88, 1px 0 #141c88, 0 -1px #141c88; /* simulate border */
   font-size: 5.2rem;
-  line-height: 1.05;
-  margin-bottom: 0.4rem;
 }
 
 .heading-secondary {
