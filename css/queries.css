@@ -274,8 +274,8 @@
   }
 
   .step-img-box {
-    /* position: relative; */
-    transform: translateY(2.4rem);
+    position: relative;
+    /* transform: translateY(2.4rem); */
   }
   /* .step-img {
     position: relative;
@@ -284,6 +284,8 @@
   .step-img-box::before {
     position: relative;
   }
+
+  
   .step-text-box .heading-tertiary {
     margin-bottom: 0.6rem;
   }
@@ -312,8 +314,15 @@
 }
 
 /**************************/
-/* BELOW 544px (Phones) */
+/* BELOW 400x (Phones) */
 /**************************/
+@media (max-width: 28em) {
+  .step-img {
+    height: 50%; /* Adjust as needed */
+    width: auto; /* Set the width to auto to maintain aspect ratio */
+  }
+}
+
 
 @media (max-width: 25em) {
   .grid {
@@ -358,16 +367,9 @@
     /* position: top; */
   }
 
-  .step-img-box {
-    /* position: relative; */
-    transform: translateY(1.8rem);
-  }
-  /* .step-img {
-    position: relative;
-  } */
-
-  .step-img-box::before {
-    position: relative;
+  .step-img {
+    height: 50%; /* Adjust as needed */
+    width: auto; /* Set the width to auto to maintain aspect ratio */
   }
   .step-text-box .heading-tertiary {
     margin-bottom: 0.4rem;
