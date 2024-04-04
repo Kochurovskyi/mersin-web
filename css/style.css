@@ -106,7 +106,7 @@
   background-position: center;
   background-attachment: fixed;
   /* background-attachment: scroll; */
-  position: relative;
+  /* position: relative; */
   height: 100vh;
   width: 100vw;
 }
