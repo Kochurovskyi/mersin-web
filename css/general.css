@@ -228,6 +228,10 @@ body {
   /* color: #555; */
 }
 
+.btn--form.disabled {
+  opacity: 0.2;
+}
+
 .link:link,
 .link:visited {
   display: inline-block;
@@ -265,11 +269,15 @@ body {
   color: #3941ad;
 }
 
-*:focus {
-  outline: none;
-  /* outline: 4px dotted #e67e22; */
-  /* outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem #3941ad;
+*:focus :not(.btn--form) {
+  /* outline: none; */
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  /* box-shadow: 0 0 0 0.8rem #3941ad; */
+
+  outline: 0.3rem solid #3941ad;
+  outline-offset: 0.5rem;
+  border-radius: 50%;
 }
 
 /* HELPER/SETTINGS CLASSES */
