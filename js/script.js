@@ -102,6 +102,36 @@ window.onload = function () {
   }
 };
 
+// check if all form inputs are filled
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.querySelector(".cta-form");
+  var inputs = Array.from(form.querySelectorAll("input"));
+  var button = form.querySelector(".btn");
+
+  function checkInputs() {
+    var allFilled = inputs.every(function (input) {
+      return input.value.trim() !== "";
+    });
+
+    button.disabled = !allFilled;
+  }
+
+  inputs.forEach(function (input) {
+    input.addEventListener("input", checkInputs);
+  });
+
+  checkInputs();
+
+  // Add event listener to button
+  button.addEventListener("click", function (event) {
+    if (button.disabled) {
+      event.preventDefault();
+      alert("Please fill all the fields correctly before proceeding.");
+    }
+  });
+});
+
+// Open google form in new tab
 const formButton = document.querySelector(".btn--form");
 formButton.addEventListener("click", function () {
   window.open(

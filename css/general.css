@@ -70,6 +70,7 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-padding-top: 4rem;
 
   /* Does NOT work on Safari */
   /* scroll-behavior: smooth; */
@@ -216,15 +217,15 @@ body {
 }
 
 .btn--form {
-  background-color: #141c88;
-  color: #fdf2e9;
+  background-color: #3941ad;
+  color: #e2e5eb;
   align-self: end;
   padding: 1.2rem;
 }
 
 .btn--form:hover {
-  background-color: #e2e5eb;
-  color: #555;
+  background-color: #141c88;
+  /* color: #555; */
 }
 
 .link:link,
