@@ -327,6 +327,7 @@
 .cta-img-box {
   background-image: url("../img/spilka-logo.png");
   background-size: contain;
+  width: 85%;
   background-position: center;
   background-repeat: no-repeat; /* This will prevent the image from repeating */
 }
@@ -435,11 +436,11 @@
 .footer-link:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  color: #767676;
+  color: #3941ad;
   transition: all 0.3s;
 }
 
 .footer-link:hover,
 .footer-link:active {
-  color: #555;
+  color: #141c88;
 }
