@@ -187,7 +187,12 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
+
+  .form-control {
+  font-size: 3rem;}
+
 }
+
 
 /**************************/
 /* BELOW 704px (Smaller tablets) */

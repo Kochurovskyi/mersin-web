@@ -57,6 +57,40 @@
   background-color: #141c88;
 }
 
+.lang-selector {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.1rem;
+}
+
+.form-control {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  padding: 0% 1.4rem;
+  border-radius: 9px;
+  border: none;
+  background-color: #e2e5eb;
+  margin-left: 1.8rem;
+  text-align: right;
+}
+
+.form-control:hover,
+.form-control:active {
+  color: #3941ad;
+  /* background-color: #e2e5eb; */
+}
+
+.lang-flag {
+  display: block;
+  margin: 0 auto;
+  height: 3.6rem;
+  width: 3.6rem;
+}
+
 /* MOBILE */
 .btn-mobile-nav {
   border: none;

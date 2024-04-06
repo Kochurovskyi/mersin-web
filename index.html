@@ -49,10 +49,17 @@
       <a href="#site-footer"><img class="logo" alt="Spilka logo" src="img/spilka-logo.png" /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#aims">Цілі</a></li>
-          <li><a class="main-nav-link" href="#upcoming">Найближчі події</a></li>
-          <li><a class="main-nav-link" href="#past">Минулі заходи</a></li>
-          <li><a class="main-nav-link nav-cta" href="#cta">Долучитись</a></li>
+          <li><a data-i18n="aims" class="main-nav-link" href="#aims"></a></li>
+          <li><a data-i18n="upcoming" class="main-nav-link" href="#upcoming"></a></li>
+          <li><a data-i18n="past" class="main-nav-link" href="#past"></a></li>
+          <li><a data-i18n="join" class="main-nav-link nav-cta" href="#cta"></a></li>
+          <div class="lang-selector">
+          <select id="language-selector" class="form-control" onchange="changeLanguage(this.value)">
+            <option value="ua">Українська</option>
+            <option value="en">English</option>
+          </select>
+          <object data="img/ua.svg" type="image/svg+xml" class="lang-flag"></object>
+        </div>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -64,61 +71,53 @@
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
-            <h1 class="heading-primary">Асоціація Українців у Мерсіні</h1>
-            <p class="hero-description">З Україною в серці</p>
-            <a href="#cta" class="btn btn--full margin-right-sm">Зареєструватись</a>
-            <a href="#aims" class="btn btn--outline">Більше про нас &darr;</a>
+            <h1 data-i18n="title" class="heading-primary"></h1>
+            <p data-i18n="subititle" class="hero-description"></p>
+            <a data-i18n="register" href="#cta" class="btn btn--full margin-right-sm"></a>
+            <a data-i18n="more" href="#aims" class="btn btn--outline"></a>
         </div>
       </section>
 
       <section class="section-aims" id="aims">
         <div class="container">
-          <span class="subheading">Цілі</span>
-          <h2 class="heading-secondary">Наші цілі та мета діяльності</h2>
+          <span data-i18n="sub_aims" class="subheading"></span>
+          <h2 data-i18n="title_aims" class="heading-secondary">Наші цілі та мета діяльності</h2>
         </div>
 
         <div class="container grid grid--4-cols">
           <div class="feature">
             <ion-icon class="feature-icon" name="people-outline"></ion-icon>
-            <p class="feature-title">Підтримка</p>
-            <p class="feature-text">
-                Надаємо індивідуальну моральну та психологічну підтримку українціям, які знаходяться в Мерсіні. Допомогу у вирішенні побутових проблем, які виникають у зв'язку з перебуванням в іншій країні - ми станемо вашою родиною. Координація благодійницької діяльності та надання допомоги українцям, які опинилися в складних життєвих ситуаціях
-            </p>
+            <p data-i18n="aims_1" class="feature-title"></p>
+            <p data-i18n="aims_1_text" class="feature-text"></p>
           </div>
           <div class="feature">
             <ion-icon class="feature-icon" name="earth-outline"></ion-icon>
-            <p class="feature-title">Єднання</p>
-            <p class="feature-text">
-                Створюємо можливості для культурної, історичної, мовної та економічної співправці між українцями та турками, організовуємо спільні соціальні, спортивні та культурні заходи, які сприяють зміцненню дружби та близькісті між турецьким та українським народами. Займаємось поглибленням та розширенням всіх видів співробітництва між Туреччиною та Україною
-            </p>
+            <p  data-i18n="aims_2" class="feature-title"></p>
+            <p data-i18n="aims_2_text" class="feature-text"></p>
           </div>
           <div class="feature">
             <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
-            <p class="feature-title">Збереження</p>
-            <p class="feature-text">
-                Збереження української мови та культури як в українських так і в змішаних (українсько-турецьких) родинах. Організовуємо освітні заходи з метою популяризації української самобутності, а також для ознайомлення з українськими традиціями дітей українсько-турецьких сімей
-            </p>
+            <p  data-i18n="aims_3" class="feature-title"></p>
+            <p data-i18n="aims_3_text" class="feature-text"></p>
           </div>
           <div class="feature">
             <ion-icon class="feature-icon" name="sync-outline"></ion-icon>
-            <p class="feature-title">Інтеграція</p>
-            <p class="feature-text">
-                Допомога українцям з легалізацією в Туреччині. Консультації з питань отримання дозволу на проживання, допомога у вивченні турецької мови, знайомство з особливистями та менталітетом місцевого населення. Інтеграція українців у турецьке суспільство, підтримка у вирішенні адміністравно-правових питань  
-            </p>
+            <p data-i18n="aims_4" class="feature-title"></p>
+            <p data-i18n="aims_4_text" class="feature-text"></p>
           </div>
         </div>
       </section>
 
       <section class="section-upcoming" id="upcoming">
         <div class="container">
-          <span class="subheading">Скоро...</span>
+          <span data-i18n="soon" class="subheading"></span>
           <div class="upcoming">
             <div class="upcoming-text-box">
               <h2 class="heading-secondary">07.04.2024 </h2>
-                <p class="upcoming-text"> Коли: 08.00-14.00</p> 
-                <p class="upcoming-text">Де: Село Бьозон</p>
-                <p class="upcoming-text"> Що: Ходимо по горах</p>
-                <p class="upcoming-text"> Для кого: усіх хто чує себе в силі</p>
+                <p data-i18n="upcoming_1" class="upcoming-text"></p> 
+                <p data-i18n="upcoming_2" class="upcoming-text"></p>
+                <p data-i18n="upcoming_3" class="upcoming-text"></p>
+                <p data-i18n="upcoming_4" class="upcoming-text"></p>
             </div>
             <div
               class="upcoming-img-box"
@@ -131,7 +130,7 @@
 
       <section class="section-past" id="past">
         <div class="container">
-          <span class="subheading">Наші минулі заходи</span>
+          <span data-i18n="sub_past"class="subheading"></span>
           <!-- <h2 class="heading-secondary">Не придумав що тут писати</h2> -->
         </div>
 
@@ -139,10 +138,8 @@
           <!-- STEP 01 -->
           <div class="step-text-box">
             <p class="step-number">30.03.2024</p>
-            <h3 class="heading-tertiary">Малювали з дітками</h3>
-            <p class="step-description">
-              Малювали акриловими фарбами котячу банду. Дітки вчилися змішувати фарби, збудували чудову композицію, порахували котиків чи всі були на місці. Захоплюючий процес, яскраві враження, іншим разом навіть дещо неочікувані результати. 
-            </p>
+            <h3 data-i18n="past_1_title" class="heading-tertiary"></h3>
+            <p data-i18n="past_1_text"class="step-description"></p>
           </div>
 
           <div class="step-img-box">
@@ -167,19 +164,15 @@
           </div>
           <div class="step-text-box">
             <p class="step-number">25.03.2024</p>
-            <h3 class="heading-tertiary">Українські пісні в опері</h3>
-            <p class="step-description">
-              Чудовий культурний захід для всіх любителів української і не тільки класичної музики. Виступали найкращі оперні виконавці Мерсніу. Лунали як класичні турецькі та європейскі оперні твори так всіма нами знані з дитинства українцькі шедеври
-            </p>
+            <h3 data-i18n="past_2_title" class="heading-tertiary"></h3>
+            <p data-i18n="past_2_text" class="step-description"></p>
           </div>
 
           <!-- STEP 03 -->
           <div class="step-text-box">
             <p class="step-number">24.03.2024</p>
-            <h3 class="heading-tertiary">Щонедільне тренування</h3>
-            <p class="step-description">
-              Відмінний спосіб провести недільний ранок. Велосипед та легенький біг в колі близьких друзів щонеділі. Все це на набережній Мізітлі (від Фатіх/Бабель і до Марини і назад). Далі теплі посиденькі в кафе на набережній зі свіжовижатими соками, кавою та турецьким Гьозлеме
-            </p>
+            <h3 data-i18n="past_3_title" class="heading-tertiary"></h3>
+            <p data-i18n="past_3_text" class="step-description"></p>
           </div>
           <div class="step-img-box">
             <img
@@ -196,16 +189,12 @@
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
-              <h2 class="heading-secondary">
-                Відчуйте всі переваги долучившись...
-              </h2>
-              <p class="cta-text">
-                Ми вас попросимо заповнити розширену форму щоб краще з вами познайомитись і в найближчий час ми обов'язково з вами зв'яжемося
-              </p>
+              <h2 data-i18n="form_title" class="heading-secondary"></h2>
+              <p data-i18n="form_text" class="cta-text"></p>
 
               <form class="cta-form" name="sign-up" netlify>
                 <div>
-                  <label for="full-name">Ім'я та Прізвище</label>
+                  <label data-i18n="form_name" for="full-name"></label>
                   <input
                     id="full-name"
                     type="text"
@@ -216,7 +205,7 @@
                 </div>
 
                 <div>
-                  <label for="email">Телеграм АйДі</label>
+                  <label data-i18n="form_tele" for="email"></label>
                   <!-- type="email" -->
                   <input
                     id="email"
@@ -227,7 +216,7 @@
                 </div>
 
                 <div>
-                  <label for="phone">Номер телефону</label>
+                  <label data-i18n="form_phone" for="phone"></label>
                   <input
                     type="tel"
                     id="phone"
@@ -238,10 +227,7 @@
                   />
                 </div>
 
-                <button class="btn btn--form">Зареєструватись</button>
-
-                <!-- <input type="checkbox" />
-                <input type="number" /> -->
+                <button data-i18n="register_btn" class="btn btn--form"></button>
               </form>
             </div>
             <div
@@ -280,12 +266,13 @@
               </a>
             </li>
           </ul>
-
           <p class="copyright">
-            Права &copy; <span class="year">2027</span> Асоціація Українців у Мерсіні.
+            <span data-i18n="rights1"></span>
+            <span class="year"></span> 
+            <span data-i18n="rights2"></span>
           </p>
-          <p class="copyright">Дизайн: Забава Наталія</p>
-          <p class="copyright">Розробка: Кочуровський Юрій</p>
+          <p data-i18n="design" class="copyright"></p>
+          <p data-i18n="dev"  class="copyright"></p>
           
 
           
@@ -293,15 +280,17 @@
         </div>
 
         <div class="address-col">
-          <p class="footer-heading">Контакти</p>
+          <p data-i18n="contacts" class="footer-heading">Контакти</p>
           <address class="contacts">
-            <p class="address">Адреса:<br /> 
-              Akdeniz Mah Fatih Caddesi Aral 1 Apart No:17/B       <br /> MEZITLI/Mersin, Mersin, Turkey<p>
-            <p>Голова асоціації: Галина Веселуха<br />
-            <a class="footer-link" href="tel:+905392473914">(+90)539-247-39-14</a><br />
-            <a class="footer-link" href="tel:+905307888467">(+90)530-788-84-67</a><br />
-            <a class="footer-link" href="mailto:mersinukraynalilar@gmail.com"
-                >mersinukraynalilar@gmail.com</a>
+            <p class="address">
+              <span data-i18n="adress1"></span><br>
+              <span data-i18n="adress2"></span><br> 
+              <span data-i18n="adress3"></span>
+            </p>
+              <p data-i18n="head"></p>
+              <a class="footer-link" href="tel:+905392473914">(+90)539-247-39-14</a><br />
+              <a class="footer-link" href="tel:+905307888467">(+90)530-788-84-67</a><br />
+              <a class="footer-link" href="mailto:mersinukraynalilar@gmail.com">mersinukraynalilar@gmail.com</a>
             </p>
           </address>
         </div>

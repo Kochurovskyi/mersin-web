@@ -51,12 +51,10 @@ const sectionHeroEl = document.querySelector(".section-hero");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
-
+    // console.log(ent);
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
     }
-
     if (ent.isIntersecting === true) {
       document.body.classList.remove("sticky");
     }
@@ -84,8 +82,6 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
-
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
@@ -102,6 +98,7 @@ window.onload = function () {
   }
 };
 
+// -------------------------------- Form Validation -------------------
 document.addEventListener("DOMContentLoaded", function () {
   var form = document.querySelector(".cta-form");
   var inputs = Array.from(form.querySelectorAll("input"));
@@ -118,13 +115,12 @@ document.addEventListener("DOMContentLoaded", function () {
       button.classList.add("disabled");
     }
   }
-
   inputs.forEach(function (input) {
     input.addEventListener("input", checkInputs);
   });
-
   checkInputs();
 
+  // -------------------------------- Form Submission (button)-------------------
   button.addEventListener("click", function (event) {
     if (button.classList.contains("disabled")) {
       event.preventDefault();
@@ -137,9 +133,49 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// formButton.addEventListener("click", function () {
-//   window.open(
-//     "https://docs.google.com/forms/d/e/1FAIpQLSdlcvCIgZAHsnPhpUAj81aRBySXeS3259LKjri6XQjE3bjOOw/viewform"
-//   );
-// });
-// });
+// -------------------------------- Language Translation -------------------
+
+// Function to fetch language data
+async function fetchLanguageData(lang) {
+  const response = await fetch(`languages/${lang}.json`);
+  return response.json();
+}
+
+// Function to set the language preference
+async function setLanguagePreference(lang) {
+  localStorage.setItem("language", lang);
+  location.reload();
+}
+
+// Function to update content based on selected language
+function updateContent(langData) {
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.getAttribute("data-i18n");
+    element.textContent = langData[key];
+  });
+}
+
+// Function to update flag based on selected language
+async function updateFlag(lang) {
+  const flagObject = document.querySelector(".lang-flag");
+  flagObject.setAttribute("data", `img/${lang}.svg`);
+}
+
+// Event listener for language selector dropdown
+const languageSelector = document.getElementById("language-selector");
+languageSelector.addEventListener("change", async function () {
+  const lang = this.value;
+  console.log(lang);
+  await setLanguagePreference(lang);
+  await updateFlag(lang);
+});
+
+// Call updateContent() on page load
+window.addEventListener("DOMContentLoaded", async () => {
+  const userPreferredLanguage = localStorage.getItem("language") || "en";
+  const langData = await fetchLanguageData(userPreferredLanguage);
+  updateContent(langData);
+  // Set the selected option in the dropdown to match the current language
+  languageSelector.value = userPreferredLanguage;
+  updateFlag(languageSelector.value);
+});
